@@ -1,77 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohd Laralb | DevOps Engineer</title>
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Animated Background -->
+  <!-- Dark Mode Toggle -->
+  <button id="dark-mode-toggle" aria-label="Dark mode toggle">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Particles Background -->
   <div id="particles-js"></div>
 
-  <!-- Glassmorphism Navbar -->
-  <nav class="glass-nav">
-    <span class="logo">ML</span>
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="glass-card">
-      <h1 class="typing-text">Mohd Laraib</h1>
-      <p class="subtitle">Cloud Infrastructure & DevOps Engineer | GCP Certified</p>
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="glass-card hero" data-tilt>
+      <img src="assets/profile.jpg" alt="Mohd Laralb" class="profile-img">
+      <h1 class="typing-effect">Mohd Laralb</h1>
+      <p class="subtitle">GCP Certified Cloud & DevOps Engineer</p>
+      <div class="resume-btn">
+        <a href="assets/resume.pdf" download class="btn">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
       <div class="social-links">
-        <a href="https://linkedin.com/in/rabs377" target="_blank">LinkedIn</a>
-        <a href="https://github.com/codewithgulam" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/rabs377" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/codewithgulam" target="_blank"><i class="fab fa-github"></i></a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Work Experience -->
-  <section id="experience" class="section">
-    <h2>Work Experience</h2>
-    <div class="timeline">
-      <div class="glass-card timeline-item">
-        <h3>Scholar Trainee-SIM</h3>
-        <p class="company">Wipro Limited | 12/2022 - Present</p>
-        <ul>
-          <li>Provided L1/L2 support for Windows Server, Linux, and 50+ VMs.</li>
-          <li>Automated tasks using Bash scripts.</li>
-          <li>Migrated workloads to AWS/GCP.</li>
-        </ul>
+    <!-- Skills Section -->
+    <section class="glass-card" data-tilt>
+      <h2><i class="fas fa-code"></i> Technical Skills</h2>
+      <div class="skill-bars">
+        <div class="skill">
+          <span>Google Cloud (GCP)</span>
+          <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Terraform</span>
+          <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="glass-card project-card">
-        <h3>Terraform on GCP</h3>
-        <p>Built VPC, Compute Engine, and IAM roles using Terraform + GitHub Actions.</p>
+    <!-- Experience Section -->
+    <section class="glass-card" data-tilt>
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Wipro Limited</h3>
+          <p class="date">Dec 2022 - Present</p>
+          <ul>
+            <li>Managed 50+ Windows/Linux VMs</li>
+            <li>Automated tasks with Bash/Python</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="glass-card contact-form">
-      <p>Email: visitlaralb@gmail.com</p>
-      <p>Phone: 7355511576</p>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 </html>
